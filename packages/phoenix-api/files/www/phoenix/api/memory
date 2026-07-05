@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "Content-Type: application/json"
+echo ""
+
+free | awk '
+NR==2{
+printf("{\"total\":\"%s\",\"used\":\"%s\",\"free\":\"%s\"}",$2,$3,$4)
+}'
