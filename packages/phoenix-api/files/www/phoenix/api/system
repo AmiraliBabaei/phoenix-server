@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "Content-Type: application/json"
+echo ""
+
+cat <<EOF
+{
+    "hostname":"$(hostname)",
+    "uptime":"$(cut -d. -f1 /proc/uptime)"
+}
+EOF
