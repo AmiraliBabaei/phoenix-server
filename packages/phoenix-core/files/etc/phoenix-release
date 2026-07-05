@@ -1,0 +1,4 @@
+NAME="Phoenix Server"
+VERSION="0.1 Alpha"
+BASE="OpenWrt"
+CODENAME="Ignition"
