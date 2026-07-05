@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "========================"
+echo " Phoenix Server OS"
+echo "========================"
+
+. /etc/phoenix.conf
+
+echo "Name    : $PHOENIX_NAME"
+echo "Version : $PHOENIX_VERSION"
+echo "Build   : $PHOENIX_BUILD"
