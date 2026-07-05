@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "Content-Type: application/json"
+echo ""
+
+cat <<EOF
+{
+    "name":"Phoenix Server",
+    "version":"0.1 Alpha",
+    "kernel":"$(uname -r)"
+}
+EOF
